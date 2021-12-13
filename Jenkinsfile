@@ -2,14 +2,14 @@ pipeline {
   agent any
 
   tools {
-    jdk 'jdk-11'
-    maven 'mvn-3.6.3'
+    jdk 'jdk'
+    maven 'maven'
   }
 
   stages {
     stage('Build') {
       steps {
-        withMaven(maven : 'mvn-3.6.3') {
+        withMaven(maven : 'maven') {
           sh "mvn package"
         }
       }
