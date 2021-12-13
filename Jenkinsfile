@@ -14,7 +14,7 @@ pipeline {
         }
       }
     }
-
+/*
     stage ('OWASP Dependency-Check Vulnerabilities') {
       steps {
         withMaven(maven : 'mvn-3.6.3') {
@@ -60,6 +60,6 @@ pipeline {
           sh './kubectl apply -f k8s.yaml'
         }
       } 
-    }
+    }*/
   }
 }
