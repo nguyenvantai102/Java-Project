@@ -5,9 +5,9 @@ pipeline {
     jdk 'jdk'
     maven 'maven'
   }
-/*
+
   stages {
-    stage('Build') {
+    /*stage('Build') {
       steps {
         withMaven(maven : 'maven') {
           sh "mvn package"
