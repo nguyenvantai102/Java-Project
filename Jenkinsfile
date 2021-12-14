@@ -13,7 +13,7 @@ pipeline {
           sh "mvn package"
         }
       }
-    }/*
+    }*/
 
     stage ('OWASP Dependency-Check Vulnerabilities') {
       steps {
