@@ -5,7 +5,7 @@ pipeline {
     jdk 'jdk'
     maven 'maven'
   }
-
+/*
   stages {
     stage('Build') {
       steps {
@@ -13,8 +13,8 @@ pipeline {
           sh "mvn package"
         }
       }
-    }
-/*
+    }/*
+
     stage ('OWASP Dependency-Check Vulnerabilities') {
       steps {
         withMaven(maven : 'mvn-3.6.3') {
@@ -25,7 +25,7 @@ pipeline {
       }
     }
 
-    stage('SonarQube analysis') {
+  /*  stage('SonarQube analysis') {
       steps {
         withSonarQubeEnv(credentialsId: 'sonarqube-secret', installationName: 'sonarqube-server') {
           withMaven(maven : 'mvn-3.6.3') {
